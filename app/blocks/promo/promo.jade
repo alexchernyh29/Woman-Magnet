@@ -1,0 +1,51 @@
+mixin promo()
+    +b('section').promo
+        +e.wrap__header.fadeIn.wow(data-wow-duration="2s")
+            +e.wrap__header-image
+                img(src='/images/logo-mag.svg')
+            +e.wrap__header-line
+                img(src='/images/line.png')
+            +e.wrap__header-image
+                img(src='/images/logo-woman.svg')
+        +e.wrap 
+            +e('p').wrap-subtitle.fadeInLeft.wow(data-wow-duration="1.5s") Дорогой дневник...
+            +e.wrap__content.fadeIn.wow(data-wow-duration="2s")
+                +e.wrap__content-number
+                    img(src='/images/number.svg')
+                +e.wrap__content-text
+                    +e.wrap__content-title личных историй
+                        img( class= 'promo__underline' src='./images/underline.svg')
+                    +e.wrap__content-title обретения себя
+                        img( class= 'promo__underline' src='./images/underline.svg')
+                    +e.wrap__content-title и уверенности
+                        img( class= 'promo__underline' src='./images/underline.svg')
+            +e.image-main.fadeInRight.wow(data-wow-duration="1.5s")
+                img(src='/images/picture-main.png')
+            +e.wrap__text.fadeIn.wow(data-wow-duration="3s") Можно зайти с того, что есть вещи, в которых мы редко признаемся другим. Но которые хочется «выложить из головы», и тогда на помощь приходит дневник. Многие вели такие в детстве. А сейчас такой дневничок – это повод разобраться в себе, ответить на вопрос: кто я и стать увереннее.
+        +e.image-fruct.fadeInLeft.wow(data-wow-duration="3.5s")
+            img(src='/images/picture-fruct.svg')
+        +e.bg-slider
+            img(src='/images/promo-bg-sliders.png')
+        +sliders('counter')
+        +e.wrap__footer.fadeIn.wow(data-wow-duration="2s")
+            +e.wrap__footer-sharing
+                +e('a').wrap__footer-link(href='#')
+                    +e.wrap__footer-link-vk
+                        img( class="vk" src='/images/vk.svg')
+                        img( class="vk-hover footer-link-od-over" src='/images/vk-hover.svg')
+                +e('a').wrap__footer-link(href='#')
+                    +e.wrap__footer-link-od
+                        img(class="od" src='/images/od.svg')
+                        img( class="od-hover footer-link-od-over" src='/images/od-hover.svg')
+                +e('a').wrap__footer-link(href='#')
+                    +e.wrap__footer-link-tg
+                        img(class="tg" src='/images/tg.svg')
+                        img( class="tg-hover footer-link-od-over" src='/images/tg-hover.svg')
+            +e.wrap__footer-text © 2023,  Shkulev Media Holding<br>Creative Studio
+            +e.wrap__footer-logo
+                +e.wrap__header-image
+                    img(src='/images/logo-mag.svg')
+                +e.wrap__header-line
+                    img(src='/images/line.png')
+                +e.wrap__header-image
+                    img(src='/images/logo-woman.svg')

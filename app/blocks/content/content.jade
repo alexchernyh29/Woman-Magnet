@@ -1,0 +1,229 @@
+mixin content()
+    +b('section').content
+        +e.wrap__header.fadeIn.wow(data-wow-duration="2s")
+            +e('a').wrap__header-link(href='/')
+                +e.wrap__header-link-arrow
+                    img(src='/images/arrow.svg')
+                +e.wrap__header-link-text на главную
+            +e.wrap__header-logo
+                +e.wrap__header-image
+                    img(src='/images/logo-mag.svg')
+                +e.wrap__header-line
+                    img(src='/images/line.png')
+                +e.wrap__header-image
+                    img(src='/images/logo-woman.svg')
+        +e.wrap__content
+            +e.wrap__content-item.fadeInLeft.wow(data-wow-duration="1.5s")
+                +e.wrap__content-item-arrow
+                    img(src='/images/arrow-slider-prev.svg')
+                +e.wrap__content-item-image
+                    img(src='/images/picture-item-1.png')
+                +e.wrap__content-item-arrow
+                    img(src='/images/arrow-slider-next.svg')
+            +e.wrap__content-col.fadeInRight.wow(data-wow-duration="1.5s")
+                +e('p').wrap-subtitle Дорогой дневник...
+                +e.wrap__content-text
+                    +e.wrap__content-title.content__wrap__content-name Анастасии  
+                        img( class= 'content__underline' src='./images/underline.svg')
+                    +e.wrap__content-title.content__wrap__content-surname Скомороховой
+                        img( class= 'content__underline' src='./images/underline.svg')
+                    +e.wrap__content-subtitle домохозяйка, мечтает о море
+                        img( class= 'content__underline' src='./images/underline.svg')
+        +e.wrap__info
+            +e.wrap__col
+                +e.wrap__col-question.fadeInLeft.wow(data-wow-duration="1.5s")
+                    +e.wrap__question-text 1.
+                    +e.wrap__question-text Счастье для меня - это...
+                +e.wrap__col-answer.fadeInRight.wow(data-wow-duration="1.5s")
+                    +e.wrap__answer-text Как воспринимали себя в детстве, 
+                        img( class= 'content__underline-info' src='./images/underline.svg')
+                    +e.wrap__answer-text всегда ли были уверенной, в каком 
+                        img( class= 'content__underline-info' src='./images/underline.svg')
+                    +e.wrap__answer-text возрасте
+                        img( class= 'content__underline-info' src='./images/underline.svg')
+                +e.wrap__col-answer-mobile.fadeInRight.wow(data-wow-duration="1.5s")
+                    +e.wrap__answer-text Как воспринимали 
+                        img( class= 'content__underline-info' src='./images/underline.svg')
+                    +e.wrap__answer-text себя в детстве, всегда 
+                        img( class= 'content__underline-info' src='./images/underline.svg')
+                    +e.wrap__answer-text  ли были уверенной,  
+                        img( class= 'content__underline-info' src='./images/underline.svg')
+                    +e.wrap__answer-text в каком возрасте
+                        img( class= 'content__underline-info' src='./images/underline.svg')
+            +e.wrap__col
+                +e.wrap__col-question.fadeInLeft.wow(data-wow-duration="1.5s")
+                    +e.wrap__question-text 2.
+                    +e.wrap__question-text Главный источник эндорфинов для меня - это
+                +e.wrap__col-answer.fadeInRight.wow(data-wow-duration="1.5s")
+                    +e.wrap__answer-text Время с семьей
+                        img( class= 'content__underline-info' src='./images/underline.svg')
+                +e.wrap__col-answer-mobile.fadeInRight.wow(data-wow-duration="1.5s")
+                    +e.wrap__answer-text Время с семьей
+                        img( class= 'content__underline-info' src='./images/underline.svg')
+            +e.wrap__col
+                +e.wrap__col-question.fadeInLeft.wow(data-wow-duration="1.5s")
+                    +e.wrap__question-text 3.
+                    +e.wrap__question-text Самое красивое, что я видела за последний месяц - это...
+                +e.wrap__col-answer.fadeInRight.wow(data-wow-duration="1.5s")
+                    +e.wrap__answer-text Как воспринимали себя в детстве, 
+                        img( class= 'content__underline-info' src='./images/underline.svg')
+                    +e.wrap__answer-text всегда ли были уверенной, в каком 
+                        img( class= 'content__underline-info' src='./images/underline.svg')
+                    +e.wrap__answer-text возрасте
+                        img( class= 'content__underline-info' src='./images/underline.svg')
+                +e.wrap__col-answer-mobile.fadeInRight.wow(data-wow-duration="1.5s")
+                    +e.wrap__answer-text Как воспринимали 
+                        img( class= 'content__underline-info' src='./images/underline.svg')
+                    +e.wrap__answer-text себя в детстве, всегда 
+                        img( class= 'content__underline-info' src='./images/underline.svg')
+                    +e.wrap__answer-text  ли были уверенной,  
+                        img( class= 'content__underline-info' src='./images/underline.svg')
+                    +e.wrap__answer-text в каком возрасте
+                        img( class= 'content__underline-info' src='./images/underline.svg')
+            +e.wrap__col
+                +e.wrap__col-question.fadeInLeft.wow(data-wow-duration="1.5s")
+                    +e.wrap__question-text 4.
+                    +e.wrap__question-text Гармонию я нахожу в...
+                +e.wrap__col-answer.fadeInRight.wow(data-wow-duration="1.5s")
+                    +e.wrap__answer-text Время с семьей
+                        img( class= 'content__underline-info' src='./images/underline.svg')
+                +e.wrap__col-answer-mobile.fadeInRight.wow(data-wow-duration="1.5s")
+                    +e.wrap__answer-text Время с семьей
+                        img( class= 'content__underline-info' src='./images/underline.svg')
+            +e.wrap__col
+                +e.wrap__col-question.fadeInLeft.wow(data-wow-duration="1.5s")
+                    +e.wrap__question-text 5.
+                    +e.wrap__question-text Моё утро начинается с...
+                +e.wrap__col-answer.fadeInRight.wow(data-wow-duration="1.5s")
+                    +e.wrap__answer-text Как воспринимали себя в детстве, 
+                        img( class= 'content__underline-info' src='./images/underline.svg')
+                    +e.wrap__answer-text всегда ли были уверенной, в каком 
+                        img( class= 'content__underline-info' src='./images/underline.svg')
+                    +e.wrap__answer-text возрасте
+                        img( class= 'content__underline-info' src='./images/underline.svg')
+                +e.wrap__col-answer-mobile.fadeInRight.wow(data-wow-duration="1.5s")
+                    +e.wrap__answer-text Как воспринимали 
+                        img( class= 'content__underline-info' src='./images/underline.svg')
+                    +e.wrap__answer-text себя в детстве, всегда 
+                        img( class= 'content__underline-info' src='./images/underline.svg')
+                    +e.wrap__answer-text  ли были уверенной,  
+                        img( class= 'content__underline-info' src='./images/underline.svg')
+                    +e.wrap__answer-text в каком возрасте
+                        img( class= 'content__underline-info' src='./images/underline.svg')
+            +e.wrap__history
+                +e.wrap__history-picture.fadeInLeft.wow(data-wow-duration="1.5s")
+                    +e.wrap__history-image
+                        img(src='./images/picture-history-1.png')
+                    +e.wrap__history-text до использования 
+                    +e.wrap__history-prod
+                        img(src='./images/history-prod-1.svg')
+                    +e.wrap__history-photo
+                        img(src='./images/history-photo-1.svg')  
+                +e.wrap__history-message.fadeInRight.wow(data-wow-duration="1.5s")
+                    +e.wrap__history-message-title Расскажите о себе, кто вы, чем занимаетесь. Есть ли увлечения, хобби.
+                    +e.wrap__history-message-text <span>Анастасия:</span> Самый необычный факт обо мне заключается в том, что я магистр юриспруденции, и много лет работала юристом. Но в какой-то момент моя любовь к косметике взяла верх: я оставила карьеру юриста, отучилась на визажиста, а в дальнейшем окончательно связала свою профессиональную жизнь с бьюти-сферой.<br><br>Самый необычный факт обо мне заключается в том, что я магистр юриспруденции, и много лет работала юристом. Но в какой-то момент моя любовь к косметике взяла верх: я оставила карьеру юриста, отучилась на визажиста, а в дальнейшем окончательно связала свою профессиональную жизнь с бьюти-сферой.
+                +e.wrap__history-paper 
+                    img(src='./images/history-paper-1.svg')
+                +e.wrap__history-paper-mobile
+                    img(src='./images/history-paper-1-mobile.svg')
+            +e.wrap__quote.fadeInLeft.wow(data-wow-duration="1.5s")
+                +e.wrap__answer-text Глядя на красивую женщину,  
+                    img( class= 'content__underline-info' src='./images/underline.svg')
+                +e.wrap__answer-text я не могу не влюбиться в нее,
+                    img( class= 'content__underline-info' src='./images/underline.svg')
+                +e.wrap__answer-text я от нее без ума
+                    img( class= 'content__underline-info' src='./images/underline.svg')
+            +e.wrap__quote-mobile.fadeInLeft.wow(data-wow-duration="1.5s")
+                +e.wrap__answer-text Глядя на красивую 
+                    img( class= 'content__underline-info' src='./images/underline.svg')
+                +e.wrap__answer-text женщину, я не могу не
+                    img( class= 'content__underline-info' src='./images/underline.svg')
+                +e.wrap__answer-text влюбиться в нее, я от
+                    img( class= 'content__underline-info' src='./images/underline.svg')
+                +e.wrap__answer-text нее без ума
+                    img( class= 'content__underline-info' src='./images/underline.svg')
+            +e.wrap__description
+                +e.wrap__description-img.fadeInLeft.wow(data-wow-duration="1.5s")
+                    img(src='./images/description-img-1.svg')
+                +e.wrap__history-message-title.fadeInRight.wow(data-wow-duration="1.5s") Расскажите о себе, кто вы, чем занимаетесь. Есть ли увлечения, хобби.
+                +e.wrap__history-message-text.fadeInRight.wow(data-wow-duration="2s") <span>Анастасия:</span> Самый необычный факт обо мне заключается в том, что я магистр юриспруденции, и много лет работала юристом. Но в какой-то момент моя любовь к косметике взяла верх: я оставила карьеру юриста, отучилась на визажиста, а в дальнейшем окончательно связала свою профессиональную жизнь с бьюти-сферой.<br><br>Самый необычный факт обо мне заключается в том, что я магистр юриспруденции, и много лет работала юристом. Но в какой-то момент моя любовь к косметике взяла верх: я оставила карьеру юриста, отучилась на визажиста, а в дальнейшем окончательно связала свою профессиональную жизнь с бьюти-сферой.
+            +e.wrap__slider
+                +e.wrap__slider-title Выбор Анастасии:
+                +e.wrap__slider-content
+                    +e.wrap__content-card
+                        +e.wrap__content-card-img
+                            img(src='./images/slider-1-prod-1.svg')
+                        +e.wrap__content-card-text Маска тканевая <span>Garnier</span> с витамином С 32г
+                    +e.wrap__content-card
+                        +e.wrap__content-card-img
+                            img(src='./images/slider-1-prod-2.svg')
+                        +e.wrap__content-card-text Гель-флюид для умывания <span>Чистая Линия Pure line</span> 185мл
+                    +e.wrap__content-card
+                        +e.wrap__content-card-img
+                            img(src='./images/slider-1-prod-3.svg')
+                        +e.wrap__content-card-text Масло гидрофильное <span>Floresan</span> Vitamin C 100мл
+                    +e.wrap__content-card
+                        +e.wrap__content-card-img
+                            img(src='./images/slider-1-prod-4.svg')
+                        +e.wrap__content-card-text Мезороллер <span>Stellary Skin Studio</span> для лица PRO 77г
+                +e.wrap__button
+                    +e.wrap__button-prev
+                        img(src='/images/arrow-slider-prev.svg')
+                    +e.wrap__button-next
+                        img(src='/images/arrow-slider-next.svg')
+                +e('a').wrap__slider-button(href='#') КУПИТЬ
+            +e.wrap__block
+                +e.wrap__block-info
+                    +e.wrap__block-info-paper.fadeIn.wow(data-wow-duration="2s")
+                        +e.wrap__block-info-text
+                            +e.wrap__answer-text Красота есть во  
+                                img( class= 'content__underline-block' src='./images/underline.svg')
+                            +e.wrap__answer-text всем, но не всем дано
+                                img( class= 'content__underline-block' src='./images/underline.svg')
+                            +e.wrap__answer-text это видеть
+                                img( class= 'content__underline-block' src='./images/underline.svg')
+                        +e.wrap__block-paper
+                            img(src='./images/block-subtract.png')
+                    +e.wrap__block-text.fadeInLeft.wow(data-wow-duration="0.5s")
+                        +e.wrap__history-message-title Расскажите о себе, кто вы, чем занимаетесь. Есть ли увлечения, хобби.
+                        +e.wrap__history-message-text <span>Анастасия:</span> Самый необычный факт обо мне заключается в том, что я магистр юриспруденции, и много лет работала юристом. Но в какой-то момент моя любовь к косметике взяла верх: я оставила карьеру юриста, отучилась на визажиста, а в дальнейшем окончательно связала свою профессиональную жизнь с бьюти-сферой.
+                +e.wrap__block-card.fadeIn.wow(data-wow-duration="2s")
+                    +e.wrap__block-card-prod
+                        img(src='./images/block-prod.svg')
+                    +e.wrap__block-card-author
+                        img(src='./images/block-author.svg')
+                    +e.wrap__block-card-title - Эксперт проекта
+                    +e.wrap__block-card-subtitle
+                        +e.wrap__card-subtitle.fadeInRight.wow(data-wow-duration="0.5s") Глядя на красивую
+                            img( class= 'content__underline-subtitle' src='./images/underline-block.svg')
+                        +e.wrap__card-subtitle.fadeInRight.wow(data-wow-duration="1.5s") женщину, я не могу не
+                            img( class= 'content__underline-subtitle' src='./images/underline-block.svg')
+                        +e.wrap__card-subtitle.fadeInRight.wow(data-wow-duration="2.5s") влюбиться в нее, я от нее без
+                            img( class= 'content__underline-subtitle' src='./images/underline-block.svg')
+                        +e.wrap__card-subtitle.fadeInRight.wow(data-wow-duration="3.5s") ума Глядя на красивую
+                            img( class= 'content__underline-subtitle' src='./images/underline-block.svg')
+                        +e.wrap__card-subtitle.fadeInRight.wow(data-wow-duration="4.5s") женщину
+                            img( class= 'content__underline-subtitle' src='./images/underline-block.svg')
+        +sliders('tape')
+        +e.wrap__footer
+                +e.wrap__footer-sharing
+                    +e('a').wrap__footer-link(href='#')
+                        +e.wrap__footer-link-vk
+                            img( class="vk" src='/images/vk.svg')
+                            img( class="vk-hover footer-link-od-over" src='/images/vk-hover.svg')
+                    +e('a').wrap__footer-link(href='#')
+                        +e.wrap__footer-link-od
+                            img(class="od" src='/images/od.svg')
+                            img( class="od-hover footer-link-od-over" src='/images/od-hover.svg')
+                    +e('a').wrap__footer-link(href='#')
+                        +e.wrap__footer-link-tg
+                            img(class="tg" src='/images/tg.svg')
+                            img( class="tg-hover footer-link-od-over" src='/images/tg-hover.svg')
+                +e.wrap__footer-text © 2023,  Shkulev Media Holding<br>Creative Studio
+                +e.wrap__footer-logo
+                    +e.wrap__header-image
+                        img(src='/images/logo-mag.svg')
+                    +e.wrap__header-line
+                        img(src='/images/line.png')
+                    +e.wrap__header-image
+                        img(src='/images/logo-woman.svg')

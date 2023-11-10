@@ -1,0 +1,700 @@
+.content
+    padding w(45) w(95) w(40)
+    padding-top w(45)
+    height 100%
+    background url(/images/bg.png) lightgray 0% 0% / 100px 100px repeat
+    +below(768px)
+        padding wm(35) wm(15)
+        height 100%
+        overflow-x hidden
+
+    &__wrap__header
+        display flex
+        flex-direction row
+        justify-content space-between
+        +below(768px)
+            flex-direction column-reverse
+            justify-content center
+            align-items center
+
+    &__wrap__header-logo
+        display flex
+        flex-direction row
+        justify-content flex-end
+        +below(768px)
+            align-items center
+
+     &__wrap__header-image
+        width w(140)
+        height w(35)
+        img
+            width 100%
+        +below(768px)
+            width wm(140)
+            height wm(35)
+
+    &__wrap__header-line
+        margin 0 w(15) 0
+        width w(20)
+        height w(15)
+        img
+            width 100%
+        +below(768px)
+            margin 0 wm(15) 0
+            width wm(20)
+            height wm(15)
+
+    &__wrap__header-link
+        display flex
+        flex-direction row
+        justify-content flex-start
+        align-items center
+        text-decoration none
+        +below(768px)
+            margin-top wm(60)
+
+    &__wrap__header-link-text
+        margin-left w(15)
+        color $c-blue
+        text-align center
+        font-family $ff-Gogol
+        font-size w(26)
+        font-weight 400
+        line-height normal
+        +below(768px)
+            margin-left wm(15)
+            font-size wm(30)
+
+     &__wrap-subtitle
+        color $c-blue
+        font-family $ff-Montserrat
+        font-size w(22)
+        font-weight 500
+        line-height w(22)
+        letter-spacing w(0.22)
+        +below(768px)
+            font-size wm(22)
+            line-height wm(22)
+            letter-spacing wm(0.2)
+
+    &__wrap__content
+        margin w(45)
+        display flex
+        flex-direction row
+        justify-content space-between
+        align-items center
+        +below(768px)
+            flex-direction column-reverse
+            margin wm(0)
+            align-items center
+            justify-content center
+
+    &__wrap__content-text
+        margin-top w(20)
+        display flex
+        flex-direction column
+        +below(768px)
+            margin-top wm(20)
+
+    &__wrap__content-title
+        position relative
+        color $c-blue
+        font-family $ff-Gogol
+        font-size w(55)
+        font-weight 400
+        line-height w(70)
+        +below(768px)
+            font-size wm(45)
+            line-height wm(45)
+
+    &__wrap__content-subtitle
+        position relative
+        color $c-blue
+        font-family $ff-Gogol
+        font-size w(30)
+        font-weight 400
+        line-height w(50)
+        +below(768px)
+            display none
+
+    &__underline
+        position absolute
+        max-width w(455)
+        left w(0)
+        bottom w(10)
+        +below(768px)
+            max-width 100%
+            left wm(0)
+            bottom wm(10)
+            height wm(2)
+
+    &__wrap__content-col
+        display flex
+        flex-direction column
+        justify-content flex-start
+        +below(768px)
+            margin-top wm(60)
+            align-items center
+            justify-content center
+
+    &__wrap__content-item
+        display flex
+        flex-direction row
+        justify-content flex-start
+        align-items center
+
+    &__wrap__content-item-arrow
+        +below(768px)
+            display none
+
+    &__wrap__content-item-image
+        width w(530)
+        height w(320)
+        flex-shrink 0
+        img
+            width 100%
+        +below(768px)
+            width wm(300)
+
+    &__wrap__info
+        padding w(150) w(105) w(115)
+        background-image url(/images/content-bg-info.png)
+        background-size cover
+        display flex
+        flex-direction column
+        +below(768px)
+            background-image none
+            padding wm(150) wm(0) wm(0)
+
+    &__wrap__col
+        margin-top w(35)
+        display flex
+        flex-direction row
+        justify-content flex-start
+        +below(768px)
+            flex-direction column
+            margin-top wm(30)
+
+    &__wrap__col-question
+        margin-top w(15)
+        width w(300)
+        display flex
+        flex-direction row
+        justify-content flex-start
+        +below(768px)
+            margin-top wm(15)
+            width 100%
+
+    &__wrap__col-answer
+        margin-left w(25)
+        +below(768px)
+            margin-left wm(0)
+            display none
+
+    &__wrap__question-text
+        color $c-orange
+        font-family $ff-Montserrat
+        font-size w(18)
+        font-weight 500
+        line-height normal
+        &:last-child
+            margin-left w(10)
+        +below(768px)
+            font-size wm(18)
+            line-height wm(26)
+            &:last-child
+                margin-left wm(10)
+
+    &__wrap__answer-text
+        position relative
+        color $c-blue
+        font-family $ff-Gogol
+        font-size w(40)
+        font-weight 500
+        line-height w(50)
+        +below(768px)
+            font-size wm(32)
+            line-height wm(34)
+
+    &__underline-info
+        position absolute
+        max-width w(705)
+        left w(-30)
+        bottom w(15)
+        +below(768px)
+            max-width 100%
+            left wm(0)
+            bottom wm(5)
+
+    &__wrap__col-answer-mobile
+        display none
+        +below(768px)
+            display block
+            margin-top wm(20)
+
+    &__wrap__history
+        position relative
+        margin-top w(165)
+        display flex
+        flex-direction row
+        justify-content space-between
+        +below(768px)
+            flex-direction column
+            justify-content flex-start
+
+    &__wrap__history-paper 
+        position absolute
+        right w(-160)
+        bottom w(-400)
+        width w(550)
+        height w(550)
+        img
+            width 100%
+        +below(768px)
+            display none
+    
+    &__wrap__history-paper-mobile
+        display none
+        img
+            width 100%
+        +below(768px)
+            display block
+            width 100%
+            margin-top wm(100)
+
+    &__wrap__history-prod
+        position absolute
+        width w(230)
+        height w(245)
+        bottom w(130)
+        left w(-85)
+        img
+            width 100%
+        +below(768px)
+            width wm(140)
+            height wm(145)
+            bottom wm(130)
+            left wm(-55)
+
+    &__wrap__history-photo
+        position absolute
+        width w(170)
+        height w(165)
+        bottom w(30)
+        left w(356)
+        img
+            width 100%
+        +below(768px)
+            width wm(140)
+            height wm(145)
+            bottom wm(30)
+            left wm(220)
+
+    &__wrap__history-picture
+        position relative
+        padding w(20)
+        background $c-white
+        filter drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.10))
+
+    &__wrap__history-image
+        width w(410)
+        height w(500)
+        img
+            width 100%
+        +below(768px)
+            width 100%
+            height wm(400)
+
+    &__wrap__history-text
+        margin-top w(10)
+        color $c-blue
+        font-family $ff-Gogol
+        font-size w(30)
+        font-weight 500
+        line-height w(40)
+        +below(768px)
+            margin-left wm(20)
+            margin-top wm(10)
+            font-size wm(28)
+            line-height wm(35)
+
+    &__wrap__history-message
+        max-width w(480)
+        +below(768px)
+            max-width 100%
+            margin-top wm(70)
+
+    &__wrap__history-message-title
+        color $c-orange
+        font-family $ff-Montserrat
+        font-size w(18)
+        font-weight 500
+        line-height w(22)
+        letter-spacing w(0.18)
+        +below(768px)
+            font-size wm(18)
+            line-height wm(26)
+
+    &__wrap__history-message-text
+        margin-top w(35)
+        color $c-black
+        font-family $ff-Montserrat
+        font-size w(16)
+        font-weight 500
+        line-height w(20)
+        letter-spacing w(0.16)
+        span
+            color $c-orange
+        +below(768px)
+            font-size wm(18)
+            line-height wm(26)
+            margin-top wm(20)
+
+    &__wrap__quote
+        margin-top w(160)
+        margin-left w(50)
+        +below(768px)
+            display none
+
+    &__wrap__quote-mobile
+        display none
+        +below(768px)
+            display block
+            margin-top wm(50)
+
+    &__wrap__description
+        position relative
+        max-width w(480)
+        margin-top w(45)
+        display flex
+        flex-direction column
+        justify-content center
+        align-self center
+        +below(768px)
+            max-width 100%
+            margin-top wm(50)
+
+    &__wrap__description-img
+        position absolute
+        bottom w(0)
+        left -60%
+        width w(190)
+        height w(200)
+        img
+            width 100%
+        +below(768px)
+            position relative
+            width wm(190)
+            height wm(200)
+            margin auto
+            margin-bottom wm(50)
+            bottom wm(0)
+            left wm(0)
+
+    &__wrap__slider
+        position relative
+        margin-top w(135)
+        +below(768px)
+            width 100%
+            margin wm(100) auto
+
+    &__wrap__slider-title
+        color $c-blue
+        font-family $ff-Gogol
+        font-size w(30)
+        font-weight 400
+        line-height w(50)
+        text-align center
+        +below(768px)
+            font-size wm(32)
+            line-height wm(50)
+    
+    &__wrap__slider-content
+        margin w(35) 0 w(35)
+        display flex
+        flex-direction row
+        justify-content space-between
+        gap w(23)
+        +below(768px)
+            position relative
+            margin wm(35) 0 wm(55)
+
+    &__wrap__content-card
+        padding w(10)
+        border w(1) solid #F5F5F5
+        background $c-white
+        box-shadow w(2) w(2) w(4) w(0) rgba(0, 0, 0, 0.10)
+        +below(768px)
+            width wm(260) !important
+            height wm(370) !important
+            margin 0 wm(28)
+            padding wm(10)
+            border wm(1) solid #F5F5F5
+
+    &__wrap__content-card-img
+        width w(240)
+        height w(240)
+        img
+            width 100%
+        +below(768px)
+            width 100%
+
+    &__wrap__content-card-text
+        padding w(21) w(16)
+        color $c-black
+        font-family $ff-Montserrat
+        font-size w(16)
+        font-weight 400
+        line-height w(20)
+        background-color #F5F5F5
+        +below(768px)
+            padding wm(210) wm(16) wm(35) wm(16)
+            font-size wm(15)
+            line-height wm(20)
+        span
+            font-weight 700
+            +below(768px)
+                font-size wm(15)
+
+    &__wrap__slider-button
+        padding w(20) w(80)
+        border-radius w(100)
+        background $c-orange
+        border w(1) solid $c-orange
+        color $c-white
+        text-align center
+        font-family $ff-Montserrat
+        font-size w(16)
+        font-weight 500
+        line-height w(20)
+        text-decoration underline
+        transition 0.5s
+        &:hover
+            background $c-white
+            color $c-orange
+            border w(1) solid $c-orange
+            transition 0.5s
+        +below(768px)
+            font-size wm(16)
+            line-height wm(20)
+            padding wm(20) wm(80)
+            margin-top wm(100)
+            margin-left 17%
+
+    &__wrap__block
+        margin-top w(140)
+        display flex
+        flex-direction row
+        justify-content space-between
+        +below(768px)
+            margin-top wm(80)
+            flex-direction column
+            justify-content center
+
+    &__wrap__block-info-paper
+        position relative
+
+    &__wrap__block-info-text
+        position relative
+        z-index 1
+        transform rotate(-7.525deg)
+        +below(768px)
+            margin-left wm(40)
+
+    &__wrap__block-paper
+        position absolute
+        top w(-120)
+        left w(-80)
+        width w(600)
+        height w(600)
+        img
+            width 100%
+        +below(768px)
+            top wm(-75)
+            left wm(-15)
+            width wm(400)
+            height wm(200)
+
+    &__underline-block
+        position absolute
+        max-width w(450)
+        left w(-30)
+        bottom w(15)
+        +below(768px)
+            max-width 100%
+            height wm(3)
+
+    &__wrap__block-text
+        margin-top w(200)
+        max-width w(480)
+        +below(768px)
+            margin-top wm(95)
+            max-width 100%
+
+    &__wrap__block-card
+        position relative
+        padding w(200) w(60) w(72) 
+        width w(500)
+        height 100%
+        flex-shrink 0
+        background $c-orange
+        +below(768px)
+            width 100%
+            padding wm(150) wm(20) wm(72)
+            margin-top wm(130)
+
+    &__wrap__block-card-title
+        color $c-white
+        font-family $ff-Gogol
+        font-size w(30)
+        font-weight 400
+        line-height w(36)
+        transform rotate(-6.54deg)
+        +below(768px)
+            font-size wm(20)
+            line-height wm(36)
+
+    &__wrap__block-card-subtitle
+        margin-top w(60)
+        +below(768px)
+            margin-top wm(60)
+
+    &__wrap__card-subtitle
+        position relative
+        color $c-white
+        font-family $ff-Gogol
+        font-size w(30)
+        font-weight 400
+        line-height w(37)
+        +below(768px)
+            font-size wm(25)
+            line-height wm(37)
+
+    &__underline-subtitle
+        position absolute
+        width 100%
+        left w(0)
+        bottom w(10)
+        img
+            width 100%
+
+    &__wrap__block-card-prod
+        position absolute
+        width w(325)
+        height w(395)
+        top w(-130)
+        right w(0)
+        flex-shrink 0
+        img
+            width 100%
+        +below(768px)
+            width wm(250)
+            height wm(330)
+            top wm(-130)
+            right wm(0)
+
+    &__wrap__block-card-author
+        position absolute
+        width w(250)
+        height w(215)
+        top w(-35)
+        left w(30)
+        flex-shrink 0
+        img
+            width 100%
+        +below(768px)
+            width wm(150)
+            height wm(160)
+            top wm(-25)
+            left wm(30)
+
+    &__wrap__button
+        display none
+        +below(768px)
+            position absolute
+            display flex
+            top 50%
+            width 100%
+            justify-content space-between
+
+    &__wrap__footer
+        position relative
+        z-index 1
+        margin-top w(150)
+        display flex
+        flex-direction row
+        justify-content space-between
+        align-items center
+        +below(768px)
+            flex-direction column-reverse
+
+    &__wrap__footer-sharing
+        display flex
+        flex-direction row
+        justify-content flex-start
+        align-items center
+
+    &__wrap__footer-link
+        width w(55)
+        height w(55)
+        background-color $c-orange
+        border-radius 50%
+        margin-right w(25)
+        transition 0.2s
+        &:last-child
+            margin-right 0
+        &:hover
+            background-color $c-white
+            .vk
+                display none
+            .vk-hover
+                display block
+
+            .od
+                display none
+            .od-hover
+                display block
+
+            .tg
+                display none
+            .tg-hover
+                display block
+
+            img
+                width w(37)
+                height w(37)
+        img
+            width w(40)
+            height w(40)
+            position absolute
+            top 50%
+            transform translate(15%, -50%)
+        +below(768px)
+            width wm(55)
+            height wm(55)
+            img
+                width wm(40)
+                height wm(40)
+                position absolute
+                top 85%
+                transform translate(15%, -50%)
+
+    &__wrap__footer-text
+        color $c-black
+        text-align center
+        font-family $ff-Montserrat
+        font-size w(14)
+        font-weight 500
+        line-height w(20)
+        letter-spacing w(0.7)
+        +below(768px)
+            margin wm(30) 0
+            font-size wm(14)
+            line-height wm(18)
+            letter-spacing wm(0.7)
+
+    &__wrap__footer-logo
+        display flex
+        flex-direction row
+        justify-content flex-end
+

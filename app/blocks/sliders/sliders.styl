@@ -1,0 +1,282 @@
+.sliders
+    position relative
+    overflow hidden
+    padding-top w(125)
+    width 90vw
+    +below(768px)
+        padding-top wm(95)
+
+    &__slider__tape
+        position absolute
+        z-index 4
+        left 20%
+        top 22%
+        width w(170)
+        height w(170)
+        img
+            width 100%
+        +below(768px)
+            display none
+
+    &__list__card-title
+        margin-top w(40)
+        color $c-blue
+        font-family $ff-Gogol
+        font-size w(40)
+        font-weight 400
+        line-height w(45)
+        text-align center
+        +below(768px)
+            font-size wm(20)
+            line-height wm(20)
+
+    &__list__card-subtitle
+        color $c-blue
+        font-family $ff-Gogol
+        font-size w(40)
+        font-weight 400
+        line-height w(40)
+        text-align center
+
+    &__slider__counter
+        position relative
+        display flex
+        flex-direction row
+        justify-content center
+        align-items center
+        z-index 2
+        +below(768px)
+            margin-bottom wm(25)
+
+    &__slider__counter-number
+        margin-right w(15)
+        color $c-blue
+        font-family $ff-Gogol
+        font-size w(55)
+        font-weight 400
+        line-height w(50)
+        +below(768px)
+            font-size wm(30)
+            line-height wm(35)
+
+    &__slider__counter-line
+        width w(15)
+        height w(25)
+        img
+            width 100%
+    
+    &__slider__counter-choice
+        margin-left w(15)
+        color $c-blue
+        font-family $ff-Montserrat
+        font-size w(22)
+        font-weight 500
+        line-height w(22)
+        +below(768px)
+            font-size wm(16)
+            line-height wm(18)
+    
+    &__slider__counter-choice-tape
+        display none
+        margin-left w(15)
+        color $c-blue
+        font-family $ff-Montserrat
+        font-size w(22)
+        font-weight 500
+        line-height w(22)
+        +below(768px)
+            display block
+            font-size wm(16)
+            line-height wm(18)
+
+    &__slider
+        position relative
+        +below(768px)
+            overflow visible
+
+    &__wrap__button
+        position absolute
+        z-index 1
+        top 50%
+        left 30%
+        max-width w(550)
+        width 100%
+        display flex
+        flex-direction row
+        justify-content space-between
+        align-items center
+        +below(768px)
+            max-width 90vw
+            top -20%
+            left 0%
+            z-index 2
+
+    &__wrap__button-prev
+        width w(40)
+        height w(70)
+        cursor pointer
+        img
+            width 100%
+        +below(768px)
+            width wm(30)
+            height wm(60)
+
+    &__wrap__button-next
+        width w(40)
+        height w(70)
+        cursor pointer
+        img
+            width 100%
+        +below(768px)
+            width wm(30)
+            height wm(60)
+
+    &__list__card-img
+        margin auto
+        width w(250)
+        height w(215)
+        img
+            width 100%
+        
+    &__list__card
+        margin-top w(70)
+        position relative
+        width w(400) !important
+        height w(515) !important
+        transition 1.5s
+        +below(768px)
+            width 70vw !important
+            height wm(320) !important
+            transition none !important
+
+    &__list__card-vector
+        position absolute
+        top w(-1)
+        left w(75)
+        width w(25)
+        height w(75)
+        display none
+        img
+            width 100%
+        +below(768px)
+            left wm(45)
+            width wm(25)
+            height wm(75)
+
+    &__list__card-link
+        display none
+        position relative
+        z-index 4
+        margin-top w(30)
+        display flex
+        flex-direction row
+        justify-content center
+        align-items center
+        text-decoration none
+        color $c-white
+        text-align center
+        font-family $ff-Montserrat
+        font-size w(18)
+        font-weight 500
+        line-height w(50)
+        text-decoration none
+        +below(768px)
+            font-size wm(18)
+            line-height wm(20)
+            margin-top wm(30)
+
+    &__list__card-link-arrow
+        width w(35)
+        height w(30)
+        margin-left w(30)
+        img
+            width 100%
+        +below(768px)
+            width wm(20)
+            height wm(20)
+            margin-left wm(10)
+
+.footer-link-od-over{
+    display none
+}
+
+.sliders__wrap__list .slick-slide.slick-current .sliders__list__card-title {
+    color: #fff;
+    padding-top 77%
+    padding-right: 40%;
+    margin-top 0
+}
+
+.sliders__wrap__list .slick-slide.slick-current .sliders__list__card-link {
+    display: normal;
+}
+
+.sliders__wrap__list .slick-slide.slick-current .sliders__list__card-subtitle {
+    color #fff
+    padding-left 20%
+    line-height w(55)
+}
+
+.sliders__wrap__list .slick-slide.slick-current {
+    background url(/images/slide-active-bg.png)
+    background-size cover
+    border-radius w(40)
+    // transition 2s
+}
+
+.sliders__wrap__list .slick-slide.slick-current .sliders__list__card{
+    margin-top 0
+}
+// @media (max-width:768px) {
+//     .sliders__wrap__list .slick-slide.slick-cloned .sliders__list__card{
+//         display: none !important;
+//     }
+// }
+
+
+.sliders__wrap__list .slick-slide.slick-current .sliders__list__card-img{
+    width w(350)
+    height w(315)
+    position absolute
+    top w(-10)
+    padding-left w(30)
+}
+@media (max-width:768px) {
+    .sliders__wrap__list .slick-slide.slick-current .sliders__list__card-title {
+        color: #fff;
+        text-align: left;
+        padding-top 64%
+        padding-left 10%
+        margin-top 0
+        font-size wm(30)
+        line-height wm(30)
+    }
+
+    .sliders__wrap__list .slick-slide.slick-current .sliders__list__card-img{
+        width wm(190)
+        height wm(170)
+        position absolute
+        top wm(-10)
+        left wm(20)
+    }
+
+    .sliders__wrap__list .slick-slide.slick-current .sliders__list__card-subtitle {
+        color #fff
+        text-align right
+        padding-right 10%
+        font-size wm(27)
+        line-height wm(35)
+    }
+
+    .sliders__wrap__list .slick-slide.slick-current {
+        transition 0.2s
+    }
+}
+
+.sliders__wrap__list .slick-slide.slick-current .sliders__list__card-vector {
+    display block
+}
+
+.disabled{
+    display: none;    
+}
